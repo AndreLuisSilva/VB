@@ -1,7 +1,10 @@
-﻿Public Class Frm_login
+﻿Imports System.Data.SqlClient
+Public Class Frm_login
     Private Sub btn_login_Click(sender As Object, e As EventArgs) Handles btn_login.Click
         Frm_principal.Show()
     End Sub
+
+
     Private Sub btn_sair_Click(sender As Object, e As EventArgs) Handles btn_sair.Click
         Me.Close()
     End Sub

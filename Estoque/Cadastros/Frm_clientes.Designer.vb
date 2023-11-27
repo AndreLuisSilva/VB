@@ -25,6 +25,8 @@ Partial Class Frm_clientes
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Frm_clientes))
         Label1 = New Label()
         Panel1 = New Panel()
+        Label15 = New Label()
+        txt_outro = New TextBox()
         Label6 = New Label()
         chb_outro = New CheckBox()
         chb_feminino = New CheckBox()
@@ -62,8 +64,6 @@ Partial Class Frm_clientes
         btn_cancelar = New Button()
         btn_limpar = New Button()
         btn_sair = New Button()
-        txt_outro = New TextBox()
-        Label15 = New Label()
         Panel1.SuspendLayout()
         Panel2.SuspendLayout()
         Panel3.SuspendLayout()
@@ -72,12 +72,13 @@ Partial Class Frm_clientes
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.BackColor = Color.Transparent
+        Label1.BackColor = Color.White
+        Label1.BorderStyle = BorderStyle.FixedSingle
         Label1.Font = New Font("Verdana", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label1.ForeColor = Color.Black
-        Label1.Location = New Point(207, 9)
+        Label1.Location = New Point(302, 6)
         Label1.Name = "Label1"
-        Label1.Size = New Size(177, 18)
+        Label1.Size = New Size(179, 20)
         Label1.TabIndex = 0
         Label1.Text = "Cadastro de Clientes"
         ' 
@@ -99,8 +100,27 @@ Partial Class Frm_clientes
         Panel1.Controls.Add(Label3)
         Panel1.Location = New Point(12, 30)
         Panel1.Name = "Panel1"
-        Panel1.Size = New Size(560, 154)
+        Panel1.Size = New Size(760, 168)
         Panel1.TabIndex = 1
+        ' 
+        ' Label15
+        ' 
+        Label15.AutoSize = True
+        Label15.BackColor = Color.Transparent
+        Label15.Font = New Font("Verdana", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label15.ForeColor = Color.Black
+        Label15.Location = New Point(187, 133)
+        Label15.Name = "Label15"
+        Label15.Size = New Size(428, 18)
+        Label15.TabIndex = 15
+        Label15.Text = "Informe qual o genero a ser cadastrado no sistema"
+        ' 
+        ' txt_outro
+        ' 
+        txt_outro.Location = New Point(621, 131)
+        txt_outro.Name = "txt_outro"
+        txt_outro.Size = New Size(119, 23)
+        txt_outro.TabIndex = 14
         ' 
         ' Label6
         ' 
@@ -108,7 +128,7 @@ Partial Class Frm_clientes
         Label6.BackColor = Color.Transparent
         Label6.Font = New Font("Verdana", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label6.ForeColor = Color.Black
-        Label6.Location = New Point(266, 80)
+        Label6.Location = New Point(453, 78)
         Label6.Name = "Label6"
         Label6.Size = New Size(49, 18)
         Label6.TabIndex = 13
@@ -117,7 +137,7 @@ Partial Class Frm_clientes
         ' chb_outro
         ' 
         chb_outro.AutoSize = True
-        chb_outro.Location = New Point(431, 99)
+        chb_outro.Location = New Point(654, 103)
         chb_outro.Name = "chb_outro"
         chb_outro.Size = New Size(57, 19)
         chb_outro.TabIndex = 12
@@ -127,7 +147,7 @@ Partial Class Frm_clientes
         ' chb_feminino
         ' 
         chb_feminino.AutoSize = True
-        chb_feminino.Location = New Point(353, 99)
+        chb_feminino.Location = New Point(556, 101)
         chb_feminino.Name = "chb_feminino"
         chb_feminino.Size = New Size(76, 19)
         chb_feminino.TabIndex = 11
@@ -137,7 +157,7 @@ Partial Class Frm_clientes
         ' chb_masculino
         ' 
         chb_masculino.AutoSize = True
-        chb_masculino.Location = New Point(266, 99)
+        chb_masculino.Location = New Point(453, 101)
         chb_masculino.Name = "chb_masculino"
         chb_masculino.Size = New Size(81, 19)
         chb_masculino.TabIndex = 10
@@ -146,9 +166,9 @@ Partial Class Frm_clientes
         ' 
         ' txt_cpf
         ' 
-        txt_cpf.Location = New Point(122, 99)
+        txt_cpf.Location = New Point(224, 99)
         txt_cpf.Name = "txt_cpf"
-        txt_cpf.Size = New Size(117, 23)
+        txt_cpf.Size = New Size(119, 23)
         txt_cpf.TabIndex = 9
         ' 
         ' Label5
@@ -157,7 +177,7 @@ Partial Class Frm_clientes
         Label5.BackColor = Color.Transparent
         Label5.Font = New Font("Verdana", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label5.ForeColor = Color.Black
-        Label5.Location = New Point(3, 4)
+        Label5.Location = New Point(3, 1)
         Label5.Name = "Label5"
         Label5.Size = New Size(73, 18)
         Label5.TabIndex = 8
@@ -169,7 +189,7 @@ Partial Class Frm_clientes
         Label4.BackColor = Color.Transparent
         Label4.Font = New Font("Verdana", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label4.ForeColor = Color.Black
-        Label4.Location = New Point(122, 80)
+        Label4.Location = New Point(224, 78)
         Label4.Name = "Label4"
         Label4.Size = New Size(40, 18)
         Label4.TabIndex = 7
@@ -177,9 +197,9 @@ Partial Class Frm_clientes
         ' 
         ' txt_data_de_nascimento
         ' 
-        txt_data_de_nascimento.Location = New Point(3, 99)
+        txt_data_de_nascimento.Location = New Point(12, 99)
         txt_data_de_nascimento.Name = "txt_data_de_nascimento"
-        txt_data_de_nascimento.Size = New Size(102, 23)
+        txt_data_de_nascimento.Size = New Size(115, 23)
         txt_data_de_nascimento.TabIndex = 6
         ' 
         ' Label2
@@ -188,7 +208,7 @@ Partial Class Frm_clientes
         Label2.BackColor = Color.Transparent
         Label2.Font = New Font("Verdana", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label2.ForeColor = Color.Black
-        Label2.Location = New Point(3, 78)
+        Label2.Location = New Point(12, 78)
         Label2.Name = "Label2"
         Label2.Size = New Size(104, 18)
         Label2.TabIndex = 5
@@ -196,9 +216,9 @@ Partial Class Frm_clientes
         ' 
         ' txt_nome
         ' 
-        txt_nome.Location = New Point(3, 47)
+        txt_nome.Location = New Point(12, 47)
         txt_nome.Name = "txt_nome"
-        txt_nome.Size = New Size(547, 23)
+        txt_nome.Size = New Size(728, 23)
         txt_nome.TabIndex = 4
         ' 
         ' Label3
@@ -207,7 +227,7 @@ Partial Class Frm_clientes
         Label3.BackColor = Color.Transparent
         Label3.Font = New Font("Verdana", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label3.ForeColor = Color.Black
-        Label3.Location = New Point(3, 25)
+        Label3.Location = New Point(12, 25)
         Label3.Name = "Label3"
         Label3.Size = New Size(56, 18)
         Label3.TabIndex = 3
@@ -229,14 +249,14 @@ Partial Class Frm_clientes
         Panel2.Controls.Add(Label7)
         Panel2.Controls.Add(txt_logradouro)
         Panel2.Controls.Add(Label8)
-        Panel2.Location = New Point(12, 204)
+        Panel2.Location = New Point(15, 222)
         Panel2.Name = "Panel2"
-        Panel2.Size = New Size(560, 127)
+        Panel2.Size = New Size(760, 129)
         Panel2.TabIndex = 2
         ' 
         ' txt_complemento
         ' 
-        txt_complemento.Location = New Point(431, 90)
+        txt_complemento.Location = New Point(621, 90)
         txt_complemento.Name = "txt_complemento"
         txt_complemento.Size = New Size(119, 23)
         txt_complemento.TabIndex = 24
@@ -244,9 +264,9 @@ Partial Class Frm_clientes
         ' cob_uf
         ' 
         cob_uf.FormattingEnabled = True
-        cob_uf.Location = New Point(287, 90)
+        cob_uf.Location = New Point(449, 90)
         cob_uf.Name = "cob_uf"
-        cob_uf.Size = New Size(128, 23)
+        cob_uf.Size = New Size(148, 23)
         cob_uf.TabIndex = 23
         ' 
         ' Label13
@@ -255,7 +275,7 @@ Partial Class Frm_clientes
         Label13.BackColor = Color.Transparent
         Label13.Font = New Font("Verdana", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label13.ForeColor = Color.Black
-        Label13.Location = New Point(431, 69)
+        Label13.Location = New Point(621, 69)
         Label13.Name = "Label13"
         Label13.Size = New Size(122, 18)
         Label13.TabIndex = 22
@@ -267,7 +287,7 @@ Partial Class Frm_clientes
         Label12.BackColor = Color.Transparent
         Label12.Font = New Font("Verdana", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label12.ForeColor = Color.Black
-        Label12.Location = New Point(285, 69)
+        Label12.Location = New Point(449, 69)
         Label12.Name = "Label12"
         Label12.Size = New Size(30, 18)
         Label12.TabIndex = 21
@@ -276,9 +296,9 @@ Partial Class Frm_clientes
         ' cob_cidade
         ' 
         cob_cidade.FormattingEnabled = True
-        cob_cidade.Location = New Point(122, 90)
+        cob_cidade.Location = New Point(224, 90)
         cob_cidade.Name = "cob_cidade"
-        cob_cidade.Size = New Size(159, 23)
+        cob_cidade.Size = New Size(119, 23)
         cob_cidade.TabIndex = 20
         ' 
         ' Label11
@@ -287,7 +307,7 @@ Partial Class Frm_clientes
         Label11.BackColor = Color.Transparent
         Label11.Font = New Font("Verdana", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label11.ForeColor = Color.Black
-        Label11.Location = New Point(122, 69)
+        Label11.Location = New Point(224, 69)
         Label11.Name = "Label11"
         Label11.Size = New Size(63, 18)
         Label11.TabIndex = 19
@@ -295,9 +315,9 @@ Partial Class Frm_clientes
         ' 
         ' txt_cep
         ' 
-        txt_cep.Location = New Point(3, 90)
+        txt_cep.Location = New Point(12, 90)
         txt_cep.Name = "txt_cep"
-        txt_cep.Size = New Size(96, 23)
+        txt_cep.Size = New Size(115, 23)
         txt_cep.TabIndex = 18
         ' 
         ' Label10
@@ -306,7 +326,7 @@ Partial Class Frm_clientes
         Label10.BackColor = Color.Transparent
         Label10.Font = New Font("Verdana", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label10.ForeColor = Color.Black
-        Label10.Location = New Point(3, 69)
+        Label10.Location = New Point(12, 69)
         Label10.Name = "Label10"
         Label10.Size = New Size(40, 18)
         Label10.TabIndex = 17
@@ -314,7 +334,7 @@ Partial Class Frm_clientes
         ' 
         ' txt_numero
         ' 
-        txt_numero.Location = New Point(431, 43)
+        txt_numero.Location = New Point(621, 43)
         txt_numero.Name = "txt_numero"
         txt_numero.Size = New Size(119, 23)
         txt_numero.TabIndex = 16
@@ -325,7 +345,7 @@ Partial Class Frm_clientes
         Label9.BackColor = Color.Transparent
         Label9.Font = New Font("Verdana", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label9.ForeColor = Color.Black
-        Label9.Location = New Point(431, 22)
+        Label9.Location = New Point(621, 22)
         Label9.Name = "Label9"
         Label9.Size = New Size(73, 18)
         Label9.TabIndex = 15
@@ -337,7 +357,7 @@ Partial Class Frm_clientes
         Label7.BackColor = Color.Transparent
         Label7.Font = New Font("Verdana", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label7.ForeColor = Color.Black
-        Label7.Location = New Point(3, 22)
+        Label7.Location = New Point(12, 22)
         Label7.Name = "Label7"
         Label7.Size = New Size(102, 18)
         Label7.TabIndex = 14
@@ -345,9 +365,9 @@ Partial Class Frm_clientes
         ' 
         ' txt_logradouro
         ' 
-        txt_logradouro.Location = New Point(3, 43)
+        txt_logradouro.Location = New Point(12, 43)
         txt_logradouro.Name = "txt_logradouro"
-        txt_logradouro.Size = New Size(410, 23)
+        txt_logradouro.Size = New Size(585, 23)
         txt_logradouro.TabIndex = 9
         ' 
         ' Label8
@@ -372,16 +392,16 @@ Partial Class Frm_clientes
         Panel3.Controls.Add(Label19)
         Panel3.Controls.Add(txt_telefone)
         Panel3.Controls.Add(Label20)
-        Panel3.Location = New Point(12, 352)
+        Panel3.Location = New Point(15, 375)
         Panel3.Name = "Panel3"
-        Panel3.Size = New Size(560, 85)
+        Panel3.Size = New Size(760, 85)
         Panel3.TabIndex = 3
         ' 
         ' txt_email
         ' 
-        txt_email.Location = New Point(270, 43)
+        txt_email.Location = New Point(449, 43)
         txt_email.Name = "txt_email"
-        txt_email.Size = New Size(280, 23)
+        txt_email.Size = New Size(290, 23)
         txt_email.TabIndex = 18
         ' 
         ' Label14
@@ -390,7 +410,7 @@ Partial Class Frm_clientes
         Label14.BackColor = Color.Transparent
         Label14.Font = New Font("Verdana", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label14.ForeColor = Color.Black
-        Label14.Location = New Point(270, 22)
+        Label14.Location = New Point(449, 22)
         Label14.Name = "Label14"
         Label14.Size = New Size(59, 18)
         Label14.TabIndex = 17
@@ -398,7 +418,7 @@ Partial Class Frm_clientes
         ' 
         ' txt_celular
         ' 
-        txt_celular.Location = New Point(136, 43)
+        txt_celular.Location = New Point(224, 43)
         txt_celular.Name = "txt_celular"
         txt_celular.Size = New Size(119, 23)
         txt_celular.TabIndex = 16
@@ -409,7 +429,7 @@ Partial Class Frm_clientes
         Label18.BackColor = Color.Transparent
         Label18.Font = New Font("Verdana", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label18.ForeColor = Color.Black
-        Label18.Location = New Point(136, 22)
+        Label18.Location = New Point(224, 22)
         Label18.Name = "Label18"
         Label18.Size = New Size(64, 18)
         Label18.TabIndex = 15
@@ -421,7 +441,7 @@ Partial Class Frm_clientes
         Label19.BackColor = Color.Transparent
         Label19.Font = New Font("Verdana", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label19.ForeColor = Color.Black
-        Label19.Location = New Point(3, 22)
+        Label19.Location = New Point(12, 22)
         Label19.Name = "Label19"
         Label19.Size = New Size(78, 18)
         Label19.TabIndex = 14
@@ -429,7 +449,7 @@ Partial Class Frm_clientes
         ' 
         ' txt_telefone
         ' 
-        txt_telefone.Location = New Point(3, 43)
+        txt_telefone.Location = New Point(12, 43)
         txt_telefone.Name = "txt_telefone"
         txt_telefone.Size = New Size(115, 23)
         txt_telefone.TabIndex = 9
@@ -457,7 +477,7 @@ Partial Class Frm_clientes
         btn_salvar.ForeColor = Color.White
         btn_salvar.Image = CType(resources.GetObject("btn_salvar.Image"), Image)
         btn_salvar.ImageAlign = ContentAlignment.TopCenter
-        btn_salvar.Location = New Point(12, 456)
+        btn_salvar.Location = New Point(111, 484)
         btn_salvar.Name = "btn_salvar"
         btn_salvar.Size = New Size(88, 65)
         btn_salvar.TabIndex = 4
@@ -476,7 +496,7 @@ Partial Class Frm_clientes
         btn_cancelar.ForeColor = Color.White
         btn_cancelar.Image = CType(resources.GetObject("btn_cancelar.Image"), Image)
         btn_cancelar.ImageAlign = ContentAlignment.TopCenter
-        btn_cancelar.Location = New Point(166, 456)
+        btn_cancelar.Location = New Point(265, 484)
         btn_cancelar.Name = "btn_cancelar"
         btn_cancelar.Size = New Size(88, 65)
         btn_cancelar.TabIndex = 5
@@ -495,7 +515,7 @@ Partial Class Frm_clientes
         btn_limpar.ForeColor = Color.White
         btn_limpar.Image = CType(resources.GetObject("btn_limpar.Image"), Image)
         btn_limpar.ImageAlign = ContentAlignment.TopCenter
-        btn_limpar.Location = New Point(320, 456)
+        btn_limpar.Location = New Point(419, 484)
         btn_limpar.Name = "btn_limpar"
         btn_limpar.Size = New Size(88, 65)
         btn_limpar.TabIndex = 6
@@ -514,7 +534,7 @@ Partial Class Frm_clientes
         btn_sair.ForeColor = Color.White
         btn_sair.Image = CType(resources.GetObject("btn_sair.Image"), Image)
         btn_sair.ImageAlign = ContentAlignment.TopCenter
-        btn_sair.Location = New Point(474, 456)
+        btn_sair.Location = New Point(573, 484)
         btn_sair.Name = "btn_sair"
         btn_sair.Size = New Size(88, 65)
         btn_sair.TabIndex = 7
@@ -522,32 +542,13 @@ Partial Class Frm_clientes
         btn_sair.TextAlign = ContentAlignment.BottomCenter
         btn_sair.UseVisualStyleBackColor = False
         ' 
-        ' txt_outro
-        ' 
-        txt_outro.Location = New Point(431, 123)
-        txt_outro.Name = "txt_outro"
-        txt_outro.Size = New Size(119, 23)
-        txt_outro.TabIndex = 14
-        ' 
-        ' Label15
-        ' 
-        Label15.AutoSize = True
-        Label15.BackColor = Color.Transparent
-        Label15.Font = New Font("Verdana", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label15.ForeColor = Color.Black
-        Label15.Location = New Point(3, 125)
-        Label15.Name = "Label15"
-        Label15.Size = New Size(428, 18)
-        Label15.TabIndex = 15
-        Label15.Text = "Informe qual o genero a ser cadastrado no sistema"
-        ' 
         ' Frm_clientes
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
         BackgroundImageLayout = ImageLayout.Stretch
-        ClientSize = New Size(584, 533)
+        ClientSize = New Size(784, 561)
         Controls.Add(btn_sair)
         Controls.Add(btn_limpar)
         Controls.Add(btn_cancelar)
