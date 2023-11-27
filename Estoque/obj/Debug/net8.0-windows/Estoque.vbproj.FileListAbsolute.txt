@@ -17,3 +17,4 @@ C:\Users\andre\OneDrive\Documentos\Projetos\VB.Net\Sistema Estoque VB\VB\Estoque
 C:\Users\andre\OneDrive\Documentos\Projetos\VB.Net\Sistema Estoque VB\VB\Estoque\obj\Debug\net8.0-windows\ref\Estoque.dll
 C:\Users\andre\OneDrive\Documentos\Projetos\VB.Net\Sistema Estoque VB\VB\Estoque\obj\Debug\net8.0-windows\Estoque.Frm_login.resources
 C:\Users\andre\OneDrive\Documentos\Projetos\VB.Net\Sistema Estoque VB\VB\Estoque\obj\Debug\net8.0-windows\Estoque.Frm_principal.resources
+C:\Users\andre\OneDrive\Documentos\Projetos\VB.Net\Sistema Estoque VB\VB\Estoque\obj\Debug\net8.0-windows\Estoque.Frm_clientes.resources

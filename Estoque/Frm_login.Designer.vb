@@ -38,7 +38,7 @@ Partial Class Frm_login
         lbl_usuario.BackColor = Color.Transparent
         lbl_usuario.Font = New Font("Verdana", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         lbl_usuario.ForeColor = Color.White
-        lbl_usuario.Location = New Point(53, 61)
+        lbl_usuario.Location = New Point(55, 38)
         lbl_usuario.Name = "lbl_usuario"
         lbl_usuario.Size = New Size(70, 18)
         lbl_usuario.TabIndex = 0
@@ -50,7 +50,7 @@ Partial Class Frm_login
         lvl_senha.BackColor = Color.Transparent
         lvl_senha.Font = New Font("Verdana", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         lvl_senha.ForeColor = Color.White
-        lvl_senha.Location = New Point(53, 109)
+        lvl_senha.Location = New Point(55, 86)
         lvl_senha.Name = "lvl_senha"
         lvl_senha.Size = New Size(59, 18)
         lvl_senha.TabIndex = 1
@@ -58,14 +58,14 @@ Partial Class Frm_login
         ' 
         ' txt_usuario
         ' 
-        txt_usuario.Location = New Point(129, 61)
+        txt_usuario.Location = New Point(131, 38)
         txt_usuario.Name = "txt_usuario"
         txt_usuario.Size = New Size(166, 23)
         txt_usuario.TabIndex = 2
         ' 
         ' txt_senha
         ' 
-        txt_senha.Location = New Point(129, 104)
+        txt_senha.Location = New Point(131, 81)
         txt_senha.Name = "txt_senha"
         txt_senha.Size = New Size(166, 23)
         txt_senha.TabIndex = 3
@@ -75,12 +75,12 @@ Partial Class Frm_login
         btn_login.BackColor = Color.Transparent
         btn_login.FlatAppearance.BorderColor = Color.White
         btn_login.FlatAppearance.BorderSize = 2
-        btn_login.FlatAppearance.MouseDownBackColor = Color.LightCoral
-        btn_login.FlatAppearance.MouseOverBackColor = Color.SpringGreen
+        btn_login.FlatAppearance.MouseDownBackColor = Color.DeepSkyBlue
+        btn_login.FlatAppearance.MouseOverBackColor = Color.Gray
         btn_login.FlatStyle = FlatStyle.Flat
         btn_login.Font = New Font("Verdana", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         btn_login.ForeColor = Color.White
-        btn_login.Location = New Point(53, 178)
+        btn_login.Location = New Point(55, 155)
         btn_login.Name = "btn_login"
         btn_login.Size = New Size(75, 28)
         btn_login.TabIndex = 4
@@ -92,12 +92,12 @@ Partial Class Frm_login
         btn_limpar.BackColor = Color.Transparent
         btn_limpar.FlatAppearance.BorderColor = Color.White
         btn_limpar.FlatAppearance.BorderSize = 2
-        btn_limpar.FlatAppearance.MouseDownBackColor = Color.LightCoral
-        btn_limpar.FlatAppearance.MouseOverBackColor = Color.SpringGreen
+        btn_limpar.FlatAppearance.MouseDownBackColor = Color.DeepSkyBlue
+        btn_limpar.FlatAppearance.MouseOverBackColor = Color.Gray
         btn_limpar.FlatStyle = FlatStyle.Flat
         btn_limpar.Font = New Font("Verdana", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         btn_limpar.ForeColor = Color.White
-        btn_limpar.Location = New Point(159, 178)
+        btn_limpar.Location = New Point(161, 155)
         btn_limpar.Name = "btn_limpar"
         btn_limpar.Size = New Size(75, 28)
         btn_limpar.TabIndex = 5
@@ -109,12 +109,12 @@ Partial Class Frm_login
         btn_sair.BackColor = Color.Transparent
         btn_sair.FlatAppearance.BorderColor = Color.White
         btn_sair.FlatAppearance.BorderSize = 2
-        btn_sair.FlatAppearance.MouseDownBackColor = Color.LightCoral
-        btn_sair.FlatAppearance.MouseOverBackColor = Color.SpringGreen
+        btn_sair.FlatAppearance.MouseDownBackColor = Color.DeepSkyBlue
+        btn_sair.FlatAppearance.MouseOverBackColor = Color.Gray
         btn_sair.FlatStyle = FlatStyle.Flat
         btn_sair.Font = New Font("Verdana", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         btn_sair.ForeColor = Color.White
-        btn_sair.Location = New Point(262, 178)
+        btn_sair.Location = New Point(264, 155)
         btn_sair.Name = "btn_sair"
         btn_sair.Size = New Size(75, 28)
         btn_sair.TabIndex = 6
@@ -127,7 +127,7 @@ Partial Class Frm_login
         AutoScaleMode = AutoScaleMode.Font
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
         BackgroundImageLayout = ImageLayout.Stretch
-        ClientSize = New Size(405, 277)
+        ClientSize = New Size(384, 211)
         Controls.Add(btn_sair)
         Controls.Add(btn_limpar)
         Controls.Add(btn_login)
@@ -136,6 +136,7 @@ Partial Class Frm_login
         Controls.Add(lvl_senha)
         Controls.Add(lbl_usuario)
         Name = "Frm_login"
+        StartPosition = FormStartPosition.CenterScreen
         Text = "Login"
         ResumeLayout(False)
         PerformLayout()
