@@ -18,3 +18,14 @@ C:\Users\andre\OneDrive\Documentos\Projetos\VB.Net\Sistema Estoque VB\VB\Estoque
 C:\Users\andre\OneDrive\Documentos\Projetos\VB.Net\Sistema Estoque VB\VB\Estoque\obj\Debug\net8.0-windows\Estoque.Frm_login.resources
 C:\Users\andre\OneDrive\Documentos\Projetos\VB.Net\Sistema Estoque VB\VB\Estoque\obj\Debug\net8.0-windows\Estoque.Frm_principal.resources
 C:\Users\andre\OneDrive\Documentos\Projetos\VB.Net\Sistema Estoque VB\VB\Estoque\obj\Debug\net8.0-windows\Estoque.Frm_clientes.resources
+C:\Users\andre\OneDrive\Documentos\Projetos\VB.Net\Sistema Estoque VB\VB\Estoque\bin\Debug\net8.0-windows\System.Data.SqlClient.dll
+C:\Users\andre\OneDrive\Documentos\Projetos\VB.Net\Sistema Estoque VB\VB\Estoque\bin\Debug\net8.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\andre\OneDrive\Documentos\Projetos\VB.Net\Sistema Estoque VB\VB\Estoque\bin\Debug\net8.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\andre\OneDrive\Documentos\Projetos\VB.Net\Sistema Estoque VB\VB\Estoque\bin\Debug\net8.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\andre\OneDrive\Documentos\Projetos\VB.Net\Sistema Estoque VB\VB\Estoque\bin\Debug\net8.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\andre\OneDrive\Documentos\Projetos\VB.Net\Sistema Estoque VB\VB\Estoque\bin\Debug\net8.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\andre\OneDrive\Documentos\Projetos\VB.Net\Sistema Estoque VB\VB\Estoque\obj\Debug\net8.0-windows\Estoque.vbproj.AssemblyReference.cache
+C:\Users\andre\OneDrive\Documentos\Projetos\VB.Net\Sistema Estoque VB\VB\Estoque\obj\Debug\net8.0-windows\Estoque.vbproj.CopyComplete
+C:\Users\andre\OneDrive\Documentos\Projetos\VB.Net\Sistema Estoque VB\VB\Estoque\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\andre\OneDrive\Documentos\Projetos\VB.Net\Sistema Estoque VB\VB\Estoque\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\andre\OneDrive\Documentos\Projetos\VB.Net\Sistema Estoque VB\VB\Estoque\bin\Debug\net8.0-windows\Npgsql.dll

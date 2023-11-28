@@ -22,104 +22,129 @@ Partial Class Frm_login
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        components = New ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Frm_login))
-        lbl_usuario = New Label()
-        lvl_senha = New Label()
-        txt_usuario = New TextBox()
-        txt_senha = New TextBox()
-        btn_login = New Button()
-        btn_limpar = New Button()
-        btn_sair = New Button()
+        Lbl_usuario = New Label()
+        Lbl_senha = New Label()
+        Txt_usuario = New TextBox()
+        Txt_senha = New TextBox()
+        Btn_login = New Button()
+        Btn_limpar = New Button()
+        Btn_sair = New Button()
+        Lbl_aviso = New Label()
+        ProgressBar1 = New ProgressBar()
+        Timer1 = New Timer(components)
         SuspendLayout()
         ' 
-        ' lbl_usuario
+        ' Lbl_usuario
         ' 
-        lbl_usuario.AutoSize = True
-        lbl_usuario.BackColor = Color.Transparent
-        lbl_usuario.Font = New Font("Verdana", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        lbl_usuario.ForeColor = Color.White
-        lbl_usuario.Location = New Point(55, 38)
-        lbl_usuario.Name = "lbl_usuario"
-        lbl_usuario.Size = New Size(70, 18)
-        lbl_usuario.TabIndex = 0
-        lbl_usuario.Text = "Usuário"
+        Lbl_usuario.AutoSize = True
+        Lbl_usuario.BackColor = Color.Transparent
+        Lbl_usuario.Font = New Font("Verdana", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Lbl_usuario.ForeColor = Color.White
+        Lbl_usuario.Location = New Point(55, 38)
+        Lbl_usuario.Name = "Lbl_usuario"
+        Lbl_usuario.Size = New Size(70, 18)
+        Lbl_usuario.TabIndex = 0
+        Lbl_usuario.Text = "Usuário"
         ' 
-        ' lvl_senha
+        ' Lbl_senha
         ' 
-        lvl_senha.AutoSize = True
-        lvl_senha.BackColor = Color.Transparent
-        lvl_senha.Font = New Font("Verdana", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        lvl_senha.ForeColor = Color.White
-        lvl_senha.Location = New Point(55, 86)
-        lvl_senha.Name = "lvl_senha"
-        lvl_senha.Size = New Size(59, 18)
-        lvl_senha.TabIndex = 1
-        lvl_senha.Text = "Senha"
+        Lbl_senha.AutoSize = True
+        Lbl_senha.BackColor = Color.Transparent
+        Lbl_senha.Font = New Font("Verdana", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Lbl_senha.ForeColor = Color.White
+        Lbl_senha.Location = New Point(55, 86)
+        Lbl_senha.Name = "Lbl_senha"
+        Lbl_senha.Size = New Size(59, 18)
+        Lbl_senha.TabIndex = 1
+        Lbl_senha.Text = "Senha"
         ' 
-        ' txt_usuario
+        ' Txt_usuario
         ' 
-        txt_usuario.Location = New Point(131, 38)
-        txt_usuario.Name = "txt_usuario"
-        txt_usuario.Size = New Size(166, 23)
-        txt_usuario.TabIndex = 2
+        Txt_usuario.Location = New Point(131, 38)
+        Txt_usuario.Name = "Txt_usuario"
+        Txt_usuario.Size = New Size(166, 23)
+        Txt_usuario.TabIndex = 2
         ' 
-        ' txt_senha
+        ' Txt_senha
         ' 
-        txt_senha.Location = New Point(131, 81)
-        txt_senha.Name = "txt_senha"
-        txt_senha.Size = New Size(166, 23)
-        txt_senha.TabIndex = 3
+        Txt_senha.Location = New Point(131, 81)
+        Txt_senha.Name = "Txt_senha"
+        Txt_senha.Size = New Size(166, 23)
+        Txt_senha.TabIndex = 3
         ' 
-        ' btn_login
+        ' Btn_login
         ' 
-        btn_login.BackColor = Color.Transparent
-        btn_login.FlatAppearance.BorderColor = Color.White
-        btn_login.FlatAppearance.BorderSize = 2
-        btn_login.FlatAppearance.MouseDownBackColor = Color.DeepSkyBlue
-        btn_login.FlatAppearance.MouseOverBackColor = Color.Gray
-        btn_login.FlatStyle = FlatStyle.Flat
-        btn_login.Font = New Font("Verdana", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        btn_login.ForeColor = Color.White
-        btn_login.Location = New Point(55, 155)
-        btn_login.Name = "btn_login"
-        btn_login.Size = New Size(75, 28)
-        btn_login.TabIndex = 4
-        btn_login.Text = "Login"
-        btn_login.UseVisualStyleBackColor = False
+        Btn_login.BackColor = Color.Transparent
+        Btn_login.FlatAppearance.BorderColor = Color.White
+        Btn_login.FlatAppearance.BorderSize = 2
+        Btn_login.FlatAppearance.MouseDownBackColor = Color.DeepSkyBlue
+        Btn_login.FlatAppearance.MouseOverBackColor = Color.Gray
+        Btn_login.FlatStyle = FlatStyle.Flat
+        Btn_login.Font = New Font("Verdana", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Btn_login.ForeColor = Color.White
+        Btn_login.Location = New Point(55, 155)
+        Btn_login.Name = "Btn_login"
+        Btn_login.Size = New Size(75, 28)
+        Btn_login.TabIndex = 4
+        Btn_login.Text = "Login"
+        Btn_login.UseVisualStyleBackColor = False
         ' 
-        ' btn_limpar
+        ' Btn_limpar
         ' 
-        btn_limpar.BackColor = Color.Transparent
-        btn_limpar.FlatAppearance.BorderColor = Color.White
-        btn_limpar.FlatAppearance.BorderSize = 2
-        btn_limpar.FlatAppearance.MouseDownBackColor = Color.DeepSkyBlue
-        btn_limpar.FlatAppearance.MouseOverBackColor = Color.Gray
-        btn_limpar.FlatStyle = FlatStyle.Flat
-        btn_limpar.Font = New Font("Verdana", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        btn_limpar.ForeColor = Color.White
-        btn_limpar.Location = New Point(161, 155)
-        btn_limpar.Name = "btn_limpar"
-        btn_limpar.Size = New Size(75, 28)
-        btn_limpar.TabIndex = 5
-        btn_limpar.Text = "Limpar"
-        btn_limpar.UseVisualStyleBackColor = False
+        Btn_limpar.BackColor = Color.Transparent
+        Btn_limpar.FlatAppearance.BorderColor = Color.White
+        Btn_limpar.FlatAppearance.BorderSize = 2
+        Btn_limpar.FlatAppearance.MouseDownBackColor = Color.DeepSkyBlue
+        Btn_limpar.FlatAppearance.MouseOverBackColor = Color.Gray
+        Btn_limpar.FlatStyle = FlatStyle.Flat
+        Btn_limpar.Font = New Font("Verdana", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Btn_limpar.ForeColor = Color.White
+        Btn_limpar.Location = New Point(161, 155)
+        Btn_limpar.Name = "Btn_limpar"
+        Btn_limpar.Size = New Size(75, 28)
+        Btn_limpar.TabIndex = 5
+        Btn_limpar.Text = "Limpar"
+        Btn_limpar.UseVisualStyleBackColor = False
         ' 
-        ' btn_sair
+        ' Btn_sair
         ' 
-        btn_sair.BackColor = Color.Transparent
-        btn_sair.FlatAppearance.BorderColor = Color.White
-        btn_sair.FlatAppearance.BorderSize = 2
-        btn_sair.FlatAppearance.MouseDownBackColor = Color.DeepSkyBlue
-        btn_sair.FlatAppearance.MouseOverBackColor = Color.Gray
-        btn_sair.FlatStyle = FlatStyle.Flat
-        btn_sair.Font = New Font("Verdana", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        btn_sair.ForeColor = Color.White
-        btn_sair.Location = New Point(264, 155)
-        btn_sair.Name = "btn_sair"
-        btn_sair.Size = New Size(75, 28)
-        btn_sair.TabIndex = 6
-        btn_sair.Text = "Sair"
-        btn_sair.UseVisualStyleBackColor = False
+        Btn_sair.BackColor = Color.Transparent
+        Btn_sair.FlatAppearance.BorderColor = Color.White
+        Btn_sair.FlatAppearance.BorderSize = 2
+        Btn_sair.FlatAppearance.MouseDownBackColor = Color.DeepSkyBlue
+        Btn_sair.FlatAppearance.MouseOverBackColor = Color.Gray
+        Btn_sair.FlatStyle = FlatStyle.Flat
+        Btn_sair.Font = New Font("Verdana", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Btn_sair.ForeColor = Color.White
+        Btn_sair.Location = New Point(264, 155)
+        Btn_sair.Name = "Btn_sair"
+        Btn_sair.Size = New Size(75, 28)
+        Btn_sair.TabIndex = 6
+        Btn_sair.Text = "Sair"
+        Btn_sair.UseVisualStyleBackColor = False
+        ' 
+        ' Lbl_aviso
+        ' 
+        Lbl_aviso.AutoSize = True
+        Lbl_aviso.BackColor = Color.Transparent
+        Lbl_aviso.Font = New Font("Verdana", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Lbl_aviso.ForeColor = Color.White
+        Lbl_aviso.Location = New Point(167, 121)
+        Lbl_aviso.Name = "Lbl_aviso"
+        Lbl_aviso.Size = New Size(0, 18)
+        Lbl_aviso.TabIndex = 7
+        ' 
+        ' ProgressBar1
+        ' 
+        ProgressBar1.Location = New Point(55, 192)
+        ProgressBar1.Name = "ProgressBar1"
+        ProgressBar1.Size = New Size(284, 10)
+        ProgressBar1.TabIndex = 8
+        ' 
+        ' Timer1
+        ' 
         ' 
         ' Frm_login
         ' 
@@ -128,13 +153,15 @@ Partial Class Frm_login
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
         BackgroundImageLayout = ImageLayout.Stretch
         ClientSize = New Size(384, 211)
-        Controls.Add(btn_sair)
-        Controls.Add(btn_limpar)
-        Controls.Add(btn_login)
-        Controls.Add(txt_senha)
-        Controls.Add(txt_usuario)
-        Controls.Add(lvl_senha)
-        Controls.Add(lbl_usuario)
+        Controls.Add(ProgressBar1)
+        Controls.Add(Lbl_aviso)
+        Controls.Add(Btn_sair)
+        Controls.Add(Btn_limpar)
+        Controls.Add(Btn_login)
+        Controls.Add(Txt_senha)
+        Controls.Add(Txt_usuario)
+        Controls.Add(Lbl_senha)
+        Controls.Add(Lbl_usuario)
         Name = "Frm_login"
         StartPosition = FormStartPosition.CenterScreen
         Text = "Login"
@@ -142,12 +169,15 @@ Partial Class Frm_login
         PerformLayout()
     End Sub
 
-    Friend WithEvents lbl_usuario As Label
-    Friend WithEvents lvl_senha As Label
-    Friend WithEvents txt_usuario As TextBox
-    Friend WithEvents txt_senha As TextBox
-    Friend WithEvents btn_login As Button
-    Friend WithEvents btn_limpar As Button
-    Friend WithEvents btn_sair As Button
+    Friend WithEvents Lbl_usuario As Label
+    Friend WithEvents Lbl_senha As Label
+    Friend WithEvents Txt_usuario As TextBox
+    Friend WithEvents Txt_senha As TextBox
+    Friend WithEvents Btn_login As Button
+    Friend WithEvents Btn_limpar As Button
+    Friend WithEvents Btn_sair As Button
+    Friend WithEvents Lbl_aviso As Label
+    Friend WithEvents ProgressBar1 As ProgressBar
+    Friend WithEvents Timer1 As Timer
 
 End Class
