@@ -77,6 +77,7 @@ Partial Class Frm_login
         ' Btn_login
         ' 
         Btn_login.BackColor = Color.Transparent
+        Btn_login.Enabled = False
         Btn_login.FlatAppearance.BorderColor = Color.White
         Btn_login.FlatAppearance.BorderSize = 2
         Btn_login.FlatAppearance.MouseDownBackColor = Color.DeepSkyBlue
@@ -129,11 +130,11 @@ Partial Class Frm_login
         ' 
         Lbl_aviso.AutoSize = True
         Lbl_aviso.BackColor = Color.Transparent
-        Lbl_aviso.Font = New Font("Verdana", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Lbl_aviso.Font = New Font("Verdana", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Lbl_aviso.ForeColor = Color.White
-        Lbl_aviso.Location = New Point(167, 121)
+        Lbl_aviso.Location = New Point(10, 125)
         Lbl_aviso.Name = "Lbl_aviso"
-        Lbl_aviso.Size = New Size(0, 18)
+        Lbl_aviso.Size = New Size(0, 14)
         Lbl_aviso.TabIndex = 7
         ' 
         ' ProgressBar1

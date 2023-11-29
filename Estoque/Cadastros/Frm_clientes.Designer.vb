@@ -26,44 +26,45 @@ Partial Class Frm_clientes
         Label1 = New Label()
         Panel1 = New Panel()
         Label15 = New Label()
-        txt_outro = New TextBox()
+        Txt_outro = New TextBox()
         Label6 = New Label()
-        chb_outro = New CheckBox()
-        chb_feminino = New CheckBox()
-        chb_masculino = New CheckBox()
-        txt_cpf = New TextBox()
+        Chb_outro = New CheckBox()
+        Chb_feminino = New CheckBox()
+        Chb_masculino = New CheckBox()
+        Txt_cpf = New TextBox()
         Label5 = New Label()
         Label4 = New Label()
-        txt_data_de_nascimento = New TextBox()
+        Txt_data_de_nascimento = New TextBox()
         Label2 = New Label()
-        txt_nome = New TextBox()
+        Txt_nome = New TextBox()
         Label3 = New Label()
         Panel2 = New Panel()
-        txt_complemento = New TextBox()
-        cob_uf = New ComboBox()
+        Txt_uf = New TextBox()
+        Txt_cidade = New TextBox()
+        Txt_complemento = New TextBox()
         Label13 = New Label()
         Label12 = New Label()
-        cob_cidade = New ComboBox()
         Label11 = New Label()
-        txt_cep = New TextBox()
+        Txt_cep = New TextBox()
         Label10 = New Label()
-        txt_numero = New TextBox()
+        Txt_numero = New TextBox()
         Label9 = New Label()
         Label7 = New Label()
-        txt_logradouro = New TextBox()
+        Txt_logradouro = New TextBox()
         Label8 = New Label()
         Panel3 = New Panel()
-        txt_email = New TextBox()
+        Txt_email = New TextBox()
         Label14 = New Label()
-        txt_celular = New TextBox()
+        Txt_celular = New TextBox()
         Label18 = New Label()
         Label19 = New Label()
-        txt_telefone = New TextBox()
+        Txt_telefone = New TextBox()
         Label20 = New Label()
-        btn_salvar = New Button()
-        btn_cancelar = New Button()
-        btn_limpar = New Button()
-        btn_sair = New Button()
+        Btn_salvar = New Button()
+        Btn_cancelar = New Button()
+        Btn_limpar = New Button()
+        Btn_sair = New Button()
+        Lbl_mensagem = New Label()
         Panel1.SuspendLayout()
         Panel2.SuspendLayout()
         Panel3.SuspendLayout()
@@ -86,17 +87,17 @@ Partial Class Frm_clientes
         ' 
         Panel1.BackColor = SystemColors.GradientInactiveCaption
         Panel1.Controls.Add(Label15)
-        Panel1.Controls.Add(txt_outro)
+        Panel1.Controls.Add(Txt_outro)
         Panel1.Controls.Add(Label6)
-        Panel1.Controls.Add(chb_outro)
-        Panel1.Controls.Add(chb_feminino)
-        Panel1.Controls.Add(chb_masculino)
-        Panel1.Controls.Add(txt_cpf)
+        Panel1.Controls.Add(Chb_outro)
+        Panel1.Controls.Add(Chb_feminino)
+        Panel1.Controls.Add(Chb_masculino)
+        Panel1.Controls.Add(Txt_cpf)
         Panel1.Controls.Add(Label5)
         Panel1.Controls.Add(Label4)
-        Panel1.Controls.Add(txt_data_de_nascimento)
+        Panel1.Controls.Add(Txt_data_de_nascimento)
         Panel1.Controls.Add(Label2)
-        Panel1.Controls.Add(txt_nome)
+        Panel1.Controls.Add(Txt_nome)
         Panel1.Controls.Add(Label3)
         Panel1.Location = New Point(12, 30)
         Panel1.Name = "Panel1"
@@ -115,12 +116,12 @@ Partial Class Frm_clientes
         Label15.TabIndex = 15
         Label15.Text = "Informe qual o genero a ser cadastrado no sistema"
         ' 
-        ' txt_outro
+        ' Txt_outro
         ' 
-        txt_outro.Location = New Point(621, 131)
-        txt_outro.Name = "txt_outro"
-        txt_outro.Size = New Size(119, 23)
-        txt_outro.TabIndex = 14
+        Txt_outro.Location = New Point(621, 131)
+        Txt_outro.Name = "Txt_outro"
+        Txt_outro.Size = New Size(119, 23)
+        Txt_outro.TabIndex = 14
         ' 
         ' Label6
         ' 
@@ -134,42 +135,42 @@ Partial Class Frm_clientes
         Label6.TabIndex = 13
         Label6.Text = "Sexo"
         ' 
-        ' chb_outro
+        ' Chb_outro
         ' 
-        chb_outro.AutoSize = True
-        chb_outro.Location = New Point(654, 103)
-        chb_outro.Name = "chb_outro"
-        chb_outro.Size = New Size(57, 19)
-        chb_outro.TabIndex = 12
-        chb_outro.Text = "Outro"
-        chb_outro.UseVisualStyleBackColor = True
+        Chb_outro.AutoSize = True
+        Chb_outro.Location = New Point(654, 101)
+        Chb_outro.Name = "Chb_outro"
+        Chb_outro.Size = New Size(57, 19)
+        Chb_outro.TabIndex = 12
+        Chb_outro.Text = "Outro"
+        Chb_outro.UseVisualStyleBackColor = True
         ' 
-        ' chb_feminino
+        ' Chb_feminino
         ' 
-        chb_feminino.AutoSize = True
-        chb_feminino.Location = New Point(556, 101)
-        chb_feminino.Name = "chb_feminino"
-        chb_feminino.Size = New Size(76, 19)
-        chb_feminino.TabIndex = 11
-        chb_feminino.Text = "Feminino"
-        chb_feminino.UseVisualStyleBackColor = True
+        Chb_feminino.AutoSize = True
+        Chb_feminino.Location = New Point(556, 101)
+        Chb_feminino.Name = "Chb_feminino"
+        Chb_feminino.Size = New Size(76, 19)
+        Chb_feminino.TabIndex = 11
+        Chb_feminino.Text = "Feminino"
+        Chb_feminino.UseVisualStyleBackColor = True
         ' 
-        ' chb_masculino
+        ' Chb_masculino
         ' 
-        chb_masculino.AutoSize = True
-        chb_masculino.Location = New Point(453, 101)
-        chb_masculino.Name = "chb_masculino"
-        chb_masculino.Size = New Size(81, 19)
-        chb_masculino.TabIndex = 10
-        chb_masculino.Text = "Masculino"
-        chb_masculino.UseVisualStyleBackColor = True
+        Chb_masculino.AutoSize = True
+        Chb_masculino.Location = New Point(453, 101)
+        Chb_masculino.Name = "Chb_masculino"
+        Chb_masculino.Size = New Size(81, 19)
+        Chb_masculino.TabIndex = 10
+        Chb_masculino.Text = "Masculino"
+        Chb_masculino.UseVisualStyleBackColor = True
         ' 
-        ' txt_cpf
+        ' Txt_cpf
         ' 
-        txt_cpf.Location = New Point(224, 99)
-        txt_cpf.Name = "txt_cpf"
-        txt_cpf.Size = New Size(119, 23)
-        txt_cpf.TabIndex = 9
+        Txt_cpf.Location = New Point(224, 99)
+        Txt_cpf.Name = "Txt_cpf"
+        Txt_cpf.Size = New Size(119, 23)
+        Txt_cpf.TabIndex = 9
         ' 
         ' Label5
         ' 
@@ -195,12 +196,12 @@ Partial Class Frm_clientes
         Label4.TabIndex = 7
         Label4.Text = "CPF"
         ' 
-        ' txt_data_de_nascimento
+        ' Txt_data_de_nascimento
         ' 
-        txt_data_de_nascimento.Location = New Point(12, 99)
-        txt_data_de_nascimento.Name = "txt_data_de_nascimento"
-        txt_data_de_nascimento.Size = New Size(115, 23)
-        txt_data_de_nascimento.TabIndex = 6
+        Txt_data_de_nascimento.Location = New Point(12, 99)
+        Txt_data_de_nascimento.Name = "Txt_data_de_nascimento"
+        Txt_data_de_nascimento.Size = New Size(115, 23)
+        Txt_data_de_nascimento.TabIndex = 6
         ' 
         ' Label2
         ' 
@@ -214,12 +215,12 @@ Partial Class Frm_clientes
         Label2.TabIndex = 5
         Label2.Text = "Nascimento"
         ' 
-        ' txt_nome
+        ' Txt_nome
         ' 
-        txt_nome.Location = New Point(12, 47)
-        txt_nome.Name = "txt_nome"
-        txt_nome.Size = New Size(728, 23)
-        txt_nome.TabIndex = 4
+        Txt_nome.Location = New Point(12, 47)
+        Txt_nome.Name = "Txt_nome"
+        Txt_nome.Size = New Size(728, 23)
+        Txt_nome.TabIndex = 4
         ' 
         ' Label3
         ' 
@@ -236,38 +237,44 @@ Partial Class Frm_clientes
         ' Panel2
         ' 
         Panel2.BackColor = SystemColors.GradientInactiveCaption
-        Panel2.Controls.Add(txt_complemento)
-        Panel2.Controls.Add(cob_uf)
+        Panel2.Controls.Add(Txt_uf)
+        Panel2.Controls.Add(Txt_cidade)
+        Panel2.Controls.Add(Txt_complemento)
         Panel2.Controls.Add(Label13)
         Panel2.Controls.Add(Label12)
-        Panel2.Controls.Add(cob_cidade)
         Panel2.Controls.Add(Label11)
-        Panel2.Controls.Add(txt_cep)
+        Panel2.Controls.Add(Txt_cep)
         Panel2.Controls.Add(Label10)
-        Panel2.Controls.Add(txt_numero)
+        Panel2.Controls.Add(Txt_numero)
         Panel2.Controls.Add(Label9)
         Panel2.Controls.Add(Label7)
-        Panel2.Controls.Add(txt_logradouro)
+        Panel2.Controls.Add(Txt_logradouro)
         Panel2.Controls.Add(Label8)
-        Panel2.Location = New Point(15, 222)
+        Panel2.Location = New Point(15, 208)
         Panel2.Name = "Panel2"
         Panel2.Size = New Size(760, 129)
         Panel2.TabIndex = 2
         ' 
-        ' txt_complemento
+        ' Txt_uf
         ' 
-        txt_complemento.Location = New Point(621, 90)
-        txt_complemento.Name = "txt_complemento"
-        txt_complemento.Size = New Size(119, 23)
-        txt_complemento.TabIndex = 24
+        Txt_uf.Location = New Point(449, 90)
+        Txt_uf.Name = "Txt_uf"
+        Txt_uf.Size = New Size(148, 23)
+        Txt_uf.TabIndex = 26
         ' 
-        ' cob_uf
+        ' Txt_cidade
         ' 
-        cob_uf.FormattingEnabled = True
-        cob_uf.Location = New Point(449, 90)
-        cob_uf.Name = "cob_uf"
-        cob_uf.Size = New Size(148, 23)
-        cob_uf.TabIndex = 23
+        Txt_cidade.Location = New Point(224, 90)
+        Txt_cidade.Name = "Txt_cidade"
+        Txt_cidade.Size = New Size(116, 23)
+        Txt_cidade.TabIndex = 25
+        ' 
+        ' Txt_complemento
+        ' 
+        Txt_complemento.Location = New Point(621, 90)
+        Txt_complemento.Name = "Txt_complemento"
+        Txt_complemento.Size = New Size(119, 23)
+        Txt_complemento.TabIndex = 24
         ' 
         ' Label13
         ' 
@@ -293,14 +300,6 @@ Partial Class Frm_clientes
         Label12.TabIndex = 21
         Label12.Text = "UF"
         ' 
-        ' cob_cidade
-        ' 
-        cob_cidade.FormattingEnabled = True
-        cob_cidade.Location = New Point(224, 90)
-        cob_cidade.Name = "cob_cidade"
-        cob_cidade.Size = New Size(119, 23)
-        cob_cidade.TabIndex = 20
-        ' 
         ' Label11
         ' 
         Label11.AutoSize = True
@@ -313,12 +312,12 @@ Partial Class Frm_clientes
         Label11.TabIndex = 19
         Label11.Text = "Cidade"
         ' 
-        ' txt_cep
+        ' Txt_cep
         ' 
-        txt_cep.Location = New Point(12, 90)
-        txt_cep.Name = "txt_cep"
-        txt_cep.Size = New Size(115, 23)
-        txt_cep.TabIndex = 18
+        Txt_cep.Location = New Point(12, 90)
+        Txt_cep.Name = "Txt_cep"
+        Txt_cep.Size = New Size(115, 23)
+        Txt_cep.TabIndex = 18
         ' 
         ' Label10
         ' 
@@ -332,12 +331,12 @@ Partial Class Frm_clientes
         Label10.TabIndex = 17
         Label10.Text = "CEP"
         ' 
-        ' txt_numero
+        ' Txt_numero
         ' 
-        txt_numero.Location = New Point(621, 43)
-        txt_numero.Name = "txt_numero"
-        txt_numero.Size = New Size(119, 23)
-        txt_numero.TabIndex = 16
+        Txt_numero.Location = New Point(621, 43)
+        Txt_numero.Name = "Txt_numero"
+        Txt_numero.Size = New Size(119, 23)
+        Txt_numero.TabIndex = 16
         ' 
         ' Label9
         ' 
@@ -363,12 +362,12 @@ Partial Class Frm_clientes
         Label7.TabIndex = 14
         Label7.Text = "Logradouro"
         ' 
-        ' txt_logradouro
+        ' Txt_logradouro
         ' 
-        txt_logradouro.Location = New Point(12, 43)
-        txt_logradouro.Name = "txt_logradouro"
-        txt_logradouro.Size = New Size(585, 23)
-        txt_logradouro.TabIndex = 9
+        Txt_logradouro.Location = New Point(12, 43)
+        Txt_logradouro.Name = "Txt_logradouro"
+        Txt_logradouro.Size = New Size(585, 23)
+        Txt_logradouro.TabIndex = 9
         ' 
         ' Label8
         ' 
@@ -385,24 +384,24 @@ Partial Class Frm_clientes
         ' Panel3
         ' 
         Panel3.BackColor = SystemColors.GradientInactiveCaption
-        Panel3.Controls.Add(txt_email)
+        Panel3.Controls.Add(Txt_email)
         Panel3.Controls.Add(Label14)
-        Panel3.Controls.Add(txt_celular)
+        Panel3.Controls.Add(Txt_celular)
         Panel3.Controls.Add(Label18)
         Panel3.Controls.Add(Label19)
-        Panel3.Controls.Add(txt_telefone)
+        Panel3.Controls.Add(Txt_telefone)
         Panel3.Controls.Add(Label20)
-        Panel3.Location = New Point(15, 375)
+        Panel3.Location = New Point(15, 348)
         Panel3.Name = "Panel3"
         Panel3.Size = New Size(760, 85)
         Panel3.TabIndex = 3
         ' 
-        ' txt_email
+        ' Txt_email
         ' 
-        txt_email.Location = New Point(449, 43)
-        txt_email.Name = "txt_email"
-        txt_email.Size = New Size(290, 23)
-        txt_email.TabIndex = 18
+        Txt_email.Location = New Point(449, 43)
+        Txt_email.Name = "Txt_email"
+        Txt_email.Size = New Size(290, 23)
+        Txt_email.TabIndex = 18
         ' 
         ' Label14
         ' 
@@ -416,12 +415,12 @@ Partial Class Frm_clientes
         Label14.TabIndex = 17
         Label14.Text = "E-mail"
         ' 
-        ' txt_celular
+        ' Txt_celular
         ' 
-        txt_celular.Location = New Point(224, 43)
-        txt_celular.Name = "txt_celular"
-        txt_celular.Size = New Size(119, 23)
-        txt_celular.TabIndex = 16
+        Txt_celular.Location = New Point(224, 43)
+        Txt_celular.Name = "Txt_celular"
+        Txt_celular.Size = New Size(119, 23)
+        Txt_celular.TabIndex = 16
         ' 
         ' Label18
         ' 
@@ -447,12 +446,12 @@ Partial Class Frm_clientes
         Label19.TabIndex = 14
         Label19.Text = "Telefone"
         ' 
-        ' txt_telefone
+        ' Txt_telefone
         ' 
-        txt_telefone.Location = New Point(12, 43)
-        txt_telefone.Name = "txt_telefone"
-        txt_telefone.Size = New Size(115, 23)
-        txt_telefone.TabIndex = 9
+        Txt_telefone.Location = New Point(12, 43)
+        Txt_telefone.Name = "Txt_telefone"
+        Txt_telefone.Size = New Size(115, 23)
+        Txt_telefone.TabIndex = 9
         ' 
         ' Label20
         ' 
@@ -466,81 +465,93 @@ Partial Class Frm_clientes
         Label20.TabIndex = 8
         Label20.Text = "CONTATO"
         ' 
-        ' btn_salvar
+        ' Btn_salvar
         ' 
-        btn_salvar.BackColor = Color.Transparent
-        btn_salvar.FlatAppearance.BorderSize = 2
-        btn_salvar.FlatAppearance.MouseDownBackColor = Color.MidnightBlue
-        btn_salvar.FlatAppearance.MouseOverBackColor = Color.Gray
-        btn_salvar.FlatStyle = FlatStyle.Flat
-        btn_salvar.Font = New Font("Verdana", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        btn_salvar.ForeColor = Color.White
-        btn_salvar.Image = CType(resources.GetObject("btn_salvar.Image"), Image)
-        btn_salvar.ImageAlign = ContentAlignment.TopCenter
-        btn_salvar.Location = New Point(111, 484)
-        btn_salvar.Name = "btn_salvar"
-        btn_salvar.Size = New Size(88, 65)
-        btn_salvar.TabIndex = 4
-        btn_salvar.Text = "Salvar"
-        btn_salvar.TextAlign = ContentAlignment.BottomCenter
-        btn_salvar.UseVisualStyleBackColor = False
+        Btn_salvar.BackColor = Color.Transparent
+        Btn_salvar.FlatAppearance.BorderSize = 2
+        Btn_salvar.FlatAppearance.MouseDownBackColor = Color.MidnightBlue
+        Btn_salvar.FlatAppearance.MouseOverBackColor = Color.Gray
+        Btn_salvar.FlatStyle = FlatStyle.Flat
+        Btn_salvar.Font = New Font("Verdana", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Btn_salvar.ForeColor = Color.White
+        Btn_salvar.Image = CType(resources.GetObject("Btn_salvar.Image"), Image)
+        Btn_salvar.ImageAlign = ContentAlignment.TopCenter
+        Btn_salvar.Location = New Point(111, 484)
+        Btn_salvar.Name = "Btn_salvar"
+        Btn_salvar.Size = New Size(88, 65)
+        Btn_salvar.TabIndex = 4
+        Btn_salvar.Text = "Salvar"
+        Btn_salvar.TextAlign = ContentAlignment.BottomCenter
+        Btn_salvar.UseVisualStyleBackColor = False
         ' 
-        ' btn_cancelar
+        ' Btn_cancelar
         ' 
-        btn_cancelar.BackColor = Color.Transparent
-        btn_cancelar.FlatAppearance.BorderSize = 2
-        btn_cancelar.FlatAppearance.MouseDownBackColor = Color.MidnightBlue
-        btn_cancelar.FlatAppearance.MouseOverBackColor = Color.Gray
-        btn_cancelar.FlatStyle = FlatStyle.Flat
-        btn_cancelar.Font = New Font("Verdana", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        btn_cancelar.ForeColor = Color.White
-        btn_cancelar.Image = CType(resources.GetObject("btn_cancelar.Image"), Image)
-        btn_cancelar.ImageAlign = ContentAlignment.TopCenter
-        btn_cancelar.Location = New Point(265, 484)
-        btn_cancelar.Name = "btn_cancelar"
-        btn_cancelar.Size = New Size(88, 65)
-        btn_cancelar.TabIndex = 5
-        btn_cancelar.Text = "Cancelar"
-        btn_cancelar.TextAlign = ContentAlignment.BottomCenter
-        btn_cancelar.UseVisualStyleBackColor = False
+        Btn_cancelar.BackColor = Color.Transparent
+        Btn_cancelar.FlatAppearance.BorderSize = 2
+        Btn_cancelar.FlatAppearance.MouseDownBackColor = Color.MidnightBlue
+        Btn_cancelar.FlatAppearance.MouseOverBackColor = Color.Gray
+        Btn_cancelar.FlatStyle = FlatStyle.Flat
+        Btn_cancelar.Font = New Font("Verdana", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Btn_cancelar.ForeColor = Color.White
+        Btn_cancelar.Image = CType(resources.GetObject("Btn_cancelar.Image"), Image)
+        Btn_cancelar.ImageAlign = ContentAlignment.TopCenter
+        Btn_cancelar.Location = New Point(265, 484)
+        Btn_cancelar.Name = "Btn_cancelar"
+        Btn_cancelar.Size = New Size(88, 65)
+        Btn_cancelar.TabIndex = 5
+        Btn_cancelar.Text = "Cancelar"
+        Btn_cancelar.TextAlign = ContentAlignment.BottomCenter
+        Btn_cancelar.UseVisualStyleBackColor = False
         ' 
-        ' btn_limpar
+        ' Btn_limpar
         ' 
-        btn_limpar.BackColor = Color.Transparent
-        btn_limpar.FlatAppearance.BorderSize = 2
-        btn_limpar.FlatAppearance.MouseDownBackColor = Color.MidnightBlue
-        btn_limpar.FlatAppearance.MouseOverBackColor = Color.Gray
-        btn_limpar.FlatStyle = FlatStyle.Flat
-        btn_limpar.Font = New Font("Verdana", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        btn_limpar.ForeColor = Color.White
-        btn_limpar.Image = CType(resources.GetObject("btn_limpar.Image"), Image)
-        btn_limpar.ImageAlign = ContentAlignment.TopCenter
-        btn_limpar.Location = New Point(419, 484)
-        btn_limpar.Name = "btn_limpar"
-        btn_limpar.Size = New Size(88, 65)
-        btn_limpar.TabIndex = 6
-        btn_limpar.Text = "Limpar"
-        btn_limpar.TextAlign = ContentAlignment.BottomCenter
-        btn_limpar.UseVisualStyleBackColor = False
+        Btn_limpar.BackColor = Color.Transparent
+        Btn_limpar.FlatAppearance.BorderSize = 2
+        Btn_limpar.FlatAppearance.MouseDownBackColor = Color.MidnightBlue
+        Btn_limpar.FlatAppearance.MouseOverBackColor = Color.Gray
+        Btn_limpar.FlatStyle = FlatStyle.Flat
+        Btn_limpar.Font = New Font("Verdana", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Btn_limpar.ForeColor = Color.White
+        Btn_limpar.Image = CType(resources.GetObject("Btn_limpar.Image"), Image)
+        Btn_limpar.ImageAlign = ContentAlignment.TopCenter
+        Btn_limpar.Location = New Point(419, 484)
+        Btn_limpar.Name = "Btn_limpar"
+        Btn_limpar.Size = New Size(88, 65)
+        Btn_limpar.TabIndex = 6
+        Btn_limpar.Text = "Limpar"
+        Btn_limpar.TextAlign = ContentAlignment.BottomCenter
+        Btn_limpar.UseVisualStyleBackColor = False
         ' 
-        ' btn_sair
+        ' Btn_sair
         ' 
-        btn_sair.BackColor = Color.Transparent
-        btn_sair.FlatAppearance.BorderSize = 2
-        btn_sair.FlatAppearance.MouseDownBackColor = Color.MidnightBlue
-        btn_sair.FlatAppearance.MouseOverBackColor = Color.Gray
-        btn_sair.FlatStyle = FlatStyle.Flat
-        btn_sair.Font = New Font("Verdana", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        btn_sair.ForeColor = Color.White
-        btn_sair.Image = CType(resources.GetObject("btn_sair.Image"), Image)
-        btn_sair.ImageAlign = ContentAlignment.TopCenter
-        btn_sair.Location = New Point(573, 484)
-        btn_sair.Name = "btn_sair"
-        btn_sair.Size = New Size(88, 65)
-        btn_sair.TabIndex = 7
-        btn_sair.Text = "Sair"
-        btn_sair.TextAlign = ContentAlignment.BottomCenter
-        btn_sair.UseVisualStyleBackColor = False
+        Btn_sair.BackColor = Color.Transparent
+        Btn_sair.FlatAppearance.BorderSize = 2
+        Btn_sair.FlatAppearance.MouseDownBackColor = Color.MidnightBlue
+        Btn_sair.FlatAppearance.MouseOverBackColor = Color.Gray
+        Btn_sair.FlatStyle = FlatStyle.Flat
+        Btn_sair.Font = New Font("Verdana", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Btn_sair.ForeColor = Color.White
+        Btn_sair.Image = CType(resources.GetObject("Btn_sair.Image"), Image)
+        Btn_sair.ImageAlign = ContentAlignment.TopCenter
+        Btn_sair.Location = New Point(573, 484)
+        Btn_sair.Name = "Btn_sair"
+        Btn_sair.Size = New Size(88, 65)
+        Btn_sair.TabIndex = 7
+        Btn_sair.Text = "Sair"
+        Btn_sair.TextAlign = ContentAlignment.BottomCenter
+        Btn_sair.UseVisualStyleBackColor = False
+        ' 
+        ' Lbl_mensagem
+        ' 
+        Lbl_mensagem.AutoSize = True
+        Lbl_mensagem.BackColor = Color.White
+        Lbl_mensagem.BorderStyle = BorderStyle.FixedSingle
+        Lbl_mensagem.Font = New Font("Verdana", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Lbl_mensagem.ForeColor = Color.Black
+        Lbl_mensagem.Location = New Point(302, 448)
+        Lbl_mensagem.Name = "Lbl_mensagem"
+        Lbl_mensagem.Size = New Size(2, 20)
+        Lbl_mensagem.TabIndex = 8
         ' 
         ' Frm_clientes
         ' 
@@ -549,10 +560,11 @@ Partial Class Frm_clientes
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
         BackgroundImageLayout = ImageLayout.Stretch
         ClientSize = New Size(784, 561)
-        Controls.Add(btn_sair)
-        Controls.Add(btn_limpar)
-        Controls.Add(btn_cancelar)
-        Controls.Add(btn_salvar)
+        Controls.Add(Lbl_mensagem)
+        Controls.Add(Btn_sair)
+        Controls.Add(Btn_limpar)
+        Controls.Add(Btn_cancelar)
+        Controls.Add(Btn_salvar)
         Controls.Add(Panel3)
         Controls.Add(Panel2)
         Controls.Add(Label1)
@@ -575,40 +587,41 @@ Partial Class Frm_clientes
     Friend WithEvents Label3 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents Label4 As Label
-    Friend WithEvents txt_data_de_nascimento As TextBox
+    Friend WithEvents Txt_data_de_nascimento As TextBox
     Friend WithEvents Label2 As Label
-    Friend WithEvents txt_nome As TextBox
-    Friend WithEvents txt_cpf As TextBox
+    Friend WithEvents Txt_nome As TextBox
+    Friend WithEvents Txt_cpf As TextBox
     Friend WithEvents Label6 As Label
-    Friend WithEvents chb_outro As CheckBox
-    Friend WithEvents chb_feminino As CheckBox
-    Friend WithEvents chb_masculino As CheckBox
+    Friend WithEvents Chb_outro As CheckBox
+    Friend WithEvents Chb_feminino As CheckBox
+    Friend WithEvents Chb_masculino As CheckBox
     Friend WithEvents Panel2 As Panel
     Friend WithEvents Label13 As Label
     Friend WithEvents Label12 As Label
-    Friend WithEvents cob_cidade As ComboBox
     Friend WithEvents Label11 As Label
-    Friend WithEvents txt_cep As TextBox
+    Friend WithEvents Txt_cep As TextBox
     Friend WithEvents Label10 As Label
-    Friend WithEvents txt_numero As TextBox
+    Friend WithEvents Txt_numero As TextBox
     Friend WithEvents Label9 As Label
     Friend WithEvents Label7 As Label
-    Friend WithEvents txt_logradouro As TextBox
+    Friend WithEvents Txt_logradouro As TextBox
     Friend WithEvents Label8 As Label
-    Friend WithEvents cob_uf As ComboBox
-    Friend WithEvents txt_complemento As TextBox
+    Friend WithEvents Txt_complemento As TextBox
     Friend WithEvents Panel3 As Panel
-    Friend WithEvents txt_celular As TextBox
+    Friend WithEvents Txt_celular As TextBox
     Friend WithEvents Label18 As Label
     Friend WithEvents Label19 As Label
-    Friend WithEvents txt_telefone As TextBox
+    Friend WithEvents Txt_telefone As TextBox
     Friend WithEvents Label20 As Label
-    Friend WithEvents txt_email As TextBox
+    Friend WithEvents Txt_email As TextBox
     Friend WithEvents Label14 As Label
-    Friend WithEvents btn_salvar As Button
-    Friend WithEvents btn_cancelar As Button
-    Friend WithEvents btn_limpar As Button
-    Friend WithEvents btn_sair As Button
+    Friend WithEvents Btn_salvar As Button
+    Friend WithEvents Btn_cancelar As Button
+    Friend WithEvents Btn_limpar As Button
+    Friend WithEvents Btn_sair As Button
     Friend WithEvents Label15 As Label
-    Friend WithEvents txt_outro As TextBox
+    Friend WithEvents Txt_outro As TextBox
+    Friend WithEvents Txt_uf As TextBox
+    Friend WithEvents Txt_cidade As TextBox
+    Friend WithEvents Lbl_mensagem As Label
 End Class
