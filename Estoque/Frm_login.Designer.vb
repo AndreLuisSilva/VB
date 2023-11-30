@@ -71,6 +71,7 @@ Partial Class Frm_login
         ' 
         Txt_senha.Location = New Point(131, 81)
         Txt_senha.Name = "Txt_senha"
+        Txt_senha.PasswordChar = "*"c
         Txt_senha.Size = New Size(166, 23)
         Txt_senha.TabIndex = 3
         ' 
@@ -85,7 +86,7 @@ Partial Class Frm_login
         Btn_login.FlatStyle = FlatStyle.Flat
         Btn_login.Font = New Font("Verdana", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Btn_login.ForeColor = Color.White
-        Btn_login.Location = New Point(55, 155)
+        Btn_login.Location = New Point(55, 147)
         Btn_login.Name = "Btn_login"
         Btn_login.Size = New Size(75, 28)
         Btn_login.TabIndex = 4
@@ -102,7 +103,7 @@ Partial Class Frm_login
         Btn_limpar.FlatStyle = FlatStyle.Flat
         Btn_limpar.Font = New Font("Verdana", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Btn_limpar.ForeColor = Color.White
-        Btn_limpar.Location = New Point(161, 155)
+        Btn_limpar.Location = New Point(161, 147)
         Btn_limpar.Name = "Btn_limpar"
         Btn_limpar.Size = New Size(75, 28)
         Btn_limpar.TabIndex = 5
@@ -119,7 +120,7 @@ Partial Class Frm_login
         Btn_sair.FlatStyle = FlatStyle.Flat
         Btn_sair.Font = New Font("Verdana", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Btn_sair.ForeColor = Color.White
-        Btn_sair.Location = New Point(264, 155)
+        Btn_sair.Location = New Point(264, 147)
         Btn_sair.Name = "Btn_sair"
         Btn_sair.Size = New Size(75, 28)
         Btn_sair.TabIndex = 6
@@ -139,13 +140,14 @@ Partial Class Frm_login
         ' 
         ' ProgressBar1
         ' 
-        ProgressBar1.Location = New Point(55, 192)
+        ProgressBar1.Location = New Point(240, 191)
         ProgressBar1.Name = "ProgressBar1"
-        ProgressBar1.Size = New Size(284, 10)
+        ProgressBar1.Size = New Size(136, 13)
         ProgressBar1.TabIndex = 8
         ' 
         ' Timer1
         ' 
+        Timer1.Interval = 150
         ' 
         ' Frm_login
         ' 
@@ -163,6 +165,7 @@ Partial Class Frm_login
         Controls.Add(Txt_usuario)
         Controls.Add(Lbl_senha)
         Controls.Add(Lbl_usuario)
+        FormBorderStyle = FormBorderStyle.FixedToolWindow
         Name = "Frm_login"
         StartPosition = FormStartPosition.CenterScreen
         Text = "Login"

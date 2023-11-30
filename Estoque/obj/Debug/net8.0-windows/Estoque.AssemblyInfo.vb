@@ -16,7 +16,7 @@ Imports System.Reflection
 <Assembly: System.Reflection.AssemblyCompanyAttribute("Estoque"),  _
  Assembly: System.Reflection.AssemblyConfigurationAttribute("Debug"),  _
  Assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0"),  _
- Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+65bb298617cca472cbd756a21ece348cdf271e39"),  _
+ Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+65a032778d5d5b332aa18fb52ccb30c7afe2f0eb"),  _
  Assembly: System.Reflection.AssemblyProductAttribute("Estoque"),  _
  Assembly: System.Reflection.AssemblyTitleAttribute("Estoque"),  _
  Assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0"),  _
